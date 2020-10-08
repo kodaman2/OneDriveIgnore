@@ -33,8 +33,7 @@ def restore_files(paths):
                     continue
                 old_path = a_path + '\\' + a_file
                 path_splitted = old_path.split('.')
-                new_name = ".".join(path_splitted[:len(path_splitted)-1])
-                new_path = a_path + '\\' + new_name
+                new_path = ".".join(path_splitted[:len(path_splitted)-1])
                 os.rename(old_path, new_path)
 
 
@@ -50,7 +49,7 @@ def main():
 
     ignore_paths_cleaned = []
     for ignore_path in ignore_paths:
-        ignore_paths_cleaned = ignore_path.strip('\n')
+        ignore_paths_cleaned.append(ignore_path.strip('\n'))
 
     if args.ignore:
         ignore_files(ignore_paths_cleaned)
