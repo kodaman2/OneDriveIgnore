@@ -1,1 +1,5 @@
 ignore_paths.txt
+onedrive_ignore.egg-info/*
+__pycache__
+build/*
+dist/*

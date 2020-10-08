@@ -11,7 +11,7 @@ Recently my VSCode powershell extension complained about my package management b
 
 # Usage
 
-Rename `sample_ignore_paths.txt` to `ignore_paths.txt`, and add one path per line to folders that are causing issues.
+Create `ignore_paths.txt` file then place it in `%userprofile%\.config\onedrive-ignore`, and add one path per line to folders that are causing issues.
 
 ```
 C:\Users\fernando\OneDrive\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\coreclr\netstandard2.0
@@ -31,9 +31,9 @@ one_drive_ignore.py -r
 
 Files Ignored, synced to onedrive:
 
-![Files_Ignored](./images/files_ignored.PNG)
+![Files_Ignored](https://github.com/kodaman2/OneDriveIgnore/raw/main/images/files_ignored.PNG)
 
 
 Files Restored, OneDrive not syncing:
 
-![Files_Restored](./images/files_restored.PNG)
+![Files_Restored](https://github.com/kodaman2/OneDriveIgnore/raw/main/images/files_restored.PNG)

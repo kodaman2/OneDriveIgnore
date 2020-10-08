@@ -1,9 +1,12 @@
 import argparse, os
 from os import listdir
 from os.path import isfile, join
+from pathlib import Path
 
 hide_ext = '.txt'
 ignore_paths = []
+home_path = str(Path.home())
+settings_path = home_path + "/.config/onedrive-ignore/"
 
 def ignore_files(ignore_paths):
     for a_path in ignore_paths:
@@ -45,7 +48,7 @@ def main():
 
     try:
         # load ignore paths
-        with open('ignore_paths.txt', 'r') as f:
+        with open(settings_path + 'ignore_paths.txt', 'r') as f:
             ignore_paths = f.readlines()
     except FileNotFoundError as e:
         print('File ignore_paths.txt not found, please create one or rename sample file\n', e)
