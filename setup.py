@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="onedrive-ignore",
-    version="0.0.3",
+    version="0.0.4",
     author="Fernando Balandran",
     author_email="fernandobe+git@protonmail.com",
     description="OneDrive ignore files",
