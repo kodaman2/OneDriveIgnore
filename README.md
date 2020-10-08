@@ -14,8 +14,8 @@ Recently my VSCode powershell extension complained about my package management b
 Rename `sample_ignore_paths.txt` to `ignore_paths.txt`, and add one path per line to folders that are causing issues.
 
 ```
-C:\Users\fernando.balandran\OneDrive - Nabors\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\coreclr\netstandard2.0
-C:\Users\fernando.balandran\OneDrive - Nabors\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\fullclr
+C:\Users\fernando\OneDrive\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\coreclr\netstandard2.0
+C:\Users\fernando\OneDrive\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\fullclr
 ```
 
 This script does a renaming of the file to txt file, then when restoring the files to original extension it simply removes the .txt.
