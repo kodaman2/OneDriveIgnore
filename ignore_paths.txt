@@ -1,2 +1,0 @@
-C:\Users\fernando.balandran\OneDrive - Nabors\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\coreclr\netstandard2.0
-C:\Users\fernando.balandran\OneDrive - Nabors\My Documents\WindowsPowerShell\Modules\PackageManagement\1.4.7\fullclr
