@@ -9,6 +9,12 @@ See response from Angus over on OneDrive https://onedrive.uservoice.com/forums/2
 
 Recently my VSCode powershell extension complained about my package management being out of date, and installed it in MyDocuments. I figured just ignore this folder for Sync, but no, OneDrive removes the folder from the PC even if it originated from the PC, leaving me without my powershell package management.
 
+# Install
+
+```
+pip install onedrive-ignore
+```
+
 # Usage
 
 Create `ignore_paths.txt` file then place it in `%userprofile%\.config\onedrive-ignore`, and add one path per line to folders that are causing issues.
@@ -21,12 +27,12 @@ C:\Users\fernando\OneDrive\My Documents\WindowsPowerShell\Modules\PackageManagem
 This script does a renaming of the file to txt file, then when restoring the files to original extension it simply removes the .txt.
 
 ```
-one_drive_ignore.py --ignore
-one_drive_ignore.py --restore
+onedrive --ignore
+onedrive --restore
 
 # Short version
-one_drive_ignore.py -i
-one_drive_ignore.py -r
+onedrive -i
+onedrive -r
 ```
 
 Files Ignored, synced to onedrive:
