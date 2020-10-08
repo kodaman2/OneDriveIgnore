@@ -43,9 +43,13 @@ def main():
     parser.add_argument('-r', '--restore', action='store_true')
     args = parser.parse_args()
 
-    # load ignore paths
-    with open('ignore_paths.txt', 'r') as f:
-        ignore_paths = f.readlines()
+    try:
+        # load ignore paths
+        with open('ignore_paths.txt', 'r') as f:
+            ignore_paths = f.readlines()
+    except FileNotFoundError as e:
+        print('File ignore_paths.txt not found, please create one or rename sample file\n', e)
+        exit()
 
     ignore_paths_cleaned = []
     for ignore_path in ignore_paths:
