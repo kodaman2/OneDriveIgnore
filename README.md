@@ -30,8 +30,10 @@ one_drive_ignore.py -r
 ```
 
 Files Ignored, synced to onedrive:
+
 ![Files_Ignored](./images/files_ignored.PNG)
 
 
 Files Restored, OneDrive not syncing:
+
 ![Files_Restored](./images/files_restored.PNG)
